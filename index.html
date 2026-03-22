@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunkumar Bommala — DOT NET Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Arunkumar Bommala, a DOT NET Stack Developer specializing in ASP .NET MVC and .NET CORE, SQlServer and modern web development." />
+  <meta name="keywords"
+    content="Arunkumar Bommala, DOT NET Full Stack Developer, ASP .NET MVC and .NET CORE, SQLServer Portfolio, Web Developer, Software Engineer" />
+  <meta name="author" content="Arunkumar Bommala" />
+  <meta name="theme-color" content="#ff004f" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav12.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav12.png" />
+  <link rel="apple-touch-icon" href="images/fav12.png" />
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/3143154987.js" crossorigin="anonymous"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER SECTION ===== -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <h1>
+          <span style="color: #ff004f; font-size: 1.5em; font-weight: bold;">P</span>ortfolio.
+        </h1>
+
+        <!-- Hamburger Menu Icon -->
+        <div id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Cancel Icon -->
+        <div id="menu-cancel" class="menu-cancel" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="sidemenu">
+          <li><a href="#header" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <!-- <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li> -->
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <p>DOT NET FULL Stack Developer</p>
+        <h2>Hi, I am <span>Arunkumar Bommala</span><br>From Andhra Pradesh</h2>
+      </div>
+    </div>
+  </header>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container about-container">
+      <div class="about-col-1">
+        <img src="images/img_about.jpeg" alt="Profile Image" class="about-img" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p class="about-intro">I am Arunkumar Bommala, a .NET Developer with 1+ year of experience in developing web applications. I specialize in building efficient applications and resolving technical issues while continuously improving my development skills.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('certifications', event)">Experience</p>
+          <p id="about-skills-link" class="tab-links" onclick="opentab('skills', event)">Skills</p>
+          <p class="tab-links" onclick="opentab('education', event)">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab fade-in" id="certifications">
+          <ul>
+            <li><span>Software Developer Intern - Infosys</span><br>
+            (June 2025 – Present)</li>
+            <li><span>Junior DOT NET Developer - COEPD</span><br>
+            (Jan 2024 – March 2025)</li>
+            <li><span>DOT NET Full Stack Developer(Apprentice) - Sathya Technologies</span><br>
+            (June 2023 – Dec 2023)</li>
+          </ul>
+        </div>
+
+
+<div class="tab-contents  fade-in" id="skills">
+  <ul>
+    <li><span>Programming Languages & Concepts</span><br>OOPS, C#</li>
+
+    <li><span>DOT NET Technologies</span><br>
+      ASP.NET, ADO.NET, ASP.NET Web Forms, ASP.NET MVC and CORE, Entity Framework
+    </li>
+
+    <li><span>UI Technologies</span><br>
+      HTML, CSS, JavaScript, Bootstrap, jQuery, AJAX, JSON
+    </li>
+
+    <li><span>Database</span><br>
+      SQL, Microsoft SQL Server, MySQL
+    </li>
+
+    <li><span>IDE / Tools</span><br>
+      Visual Studio Code,Visual Studio, Microsoft SQL Server, Git, GITHUB, Postman
+    </li>
+  </ul>
+
+  <a href="#" id="about-skills-more" class="see-more-skill" title="See more skills">
+    <i class="fa-solid fa-angles-down"></i>
+  </a>
+</div>
+        <div class="tab-contents fade-in" id="education">
+          <ul>
+            <li><span>B.Tech - Electronics and Communication Engineering</span><br>GMRIT Deemed to be University, Vizianagaram, Andhra Pradesh <br> (2019–2023)</li>
+            <li><span>Board of Intermediate Education</span><br>Sri Chaitanya Junior College, Visakhapatnam, Andhra Pradesh<br> (2017–2019)</li>
+            <li><span>Board of Secondary Education</span><br>Z.P.H School, Venkatapuram, Andhra Pradesh<br> (2016–2017)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div id="service-fullstack" data-service="fullstack">
+          <i class="fa-solid fa-layer-group"></i>
+          <h2>Full Stack Developer</h2>
+          <p>Building responsive, scalable, and efficient full stack applications.</p>
+         
+        </div>
+        <div id="service-frontend" data-service="frontend">
+          <i class="fa-solid fa-code"></i>
+          <h2>Front End Developer</h2>
+          <p>Creating user-friendly UI/UX with modern technologies.</p>
+         
+        </div>
+        <div id="service-backend" data-service="backend">
+          <i class="fa-brands fa-java"></i>
+          <h2>Back End Developer</h2>
+          <p>Server-side logic and database management using C# and SQLServer.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Bottom Sheet Popup -->
+  <div id="skills-popup" class="skills-popup hidden">
+    <div id="skills-backdrop" class="skills-backdrop"></div>
+    <div class="skills-sheet">
+      <div class="skills-sheet-header">
+        <h3 id="skills-title">Skills</h3>
+        <button id="skills-close" class="skills-close" aria-label="Close">&times;</button>
+      </div>
+      <div id="skills-grid" class="skills-grid"></div>
+      <div id="skills-tooltip" class="skills-tooltip hidden"></div>
+    </div>
+  </div>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+
+<section id="domains">
+  <div class="container">
+
+    <h1 class="sub-title">Domains I Work On</h1>
+
+    <div class="domain-slider">
+      <div class="domain-track" id="domainTrack">
+
+        <div class="domain-card">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>E-Commerce</h3>
+          <p>Online shopping platforms with product management, cart, and payment systems.</p>
+        </div>
+
+        <div class="domain-card">
+          <i class="fa-solid fa-hospital"></i>
+          <h3>Hospital Management</h3>
+          <p>Patient records, doctor scheduling, billing, and hospital administration systems.</p>
+        </div>
+
+        <div class="domain-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Education Management</h3>
+          <p>Student enrollment, course management, attendance, and academic records.</p>
+        </div>
+
+        <div class="domain-card">
+          <i class="fa-solid fa-hotel"></i>
+          <h3>Hotel Management</h3>
+          <p>Room booking systems, guest management, and billing solutions.</p>
+        </div>
+
+        <div class="domain-card">
+          <i class="fa-solid fa-book"></i>
+          <h3>Library Management</h3>
+          <p>Book inventory, issue tracking, and membership systems.</p>
+        </div>
+
+        <div class="domain-card">
+          <i class="fa-solid fa-bus"></i>
+          <h3>Transport Management</h3>
+          <p>Bus booking, route scheduling, and passenger management systems.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i> arunbommala2002@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 7780627266</p>
+          <div class="social-icons">
+            <a href="http://www.linkedin.com/in/arunkumar-bommala" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox:arunbommala2002@gmail.com" target="_blank" title="Send Email"><i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/917780627266" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:917780627266" title="Call Me"><i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <a href="Arunkumar Bommala_Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+
+        
+      </div>
+    </div>
+  </section>
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer class="copyright">
+    <p>&copy; 2026 Arunkumar Bommala. Made With <i class="fa-solid fa-heart"></i>. All Rights Reserved.</p>
+  </footer>
+
+
+ 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
